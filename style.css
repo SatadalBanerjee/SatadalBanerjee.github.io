@@ -110,7 +110,7 @@ section{
     padding: 60px 0;
 }
 
-.about, .ts, .skill ,.project,.contact{
+.about, .ts, .skill ,.project,.contact,.stat{
     font-family: 'Poppins',sans-serif;
 }
 section .title{
@@ -125,7 +125,7 @@ section .title{
 .about .about-content .left{
     width: 45%;
 }
-.about .about-content, .ts .ts-content, .skill .skill-content, .project .project-content{
+.about .about-content, .ts .ts-content, .skill .skill-content, .project .project-content,.stat .stat-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,7 +242,39 @@ transform: scale(1.07);
     /* background: rgb(51, 50, 50); */
 }
 
+/* stat section  */
 
+.stat{
+    background: #fff;
+    color: #222;
+}
+.stat .stat-content .card{
+    width: calc(33% -20px) ;
+    background: #fff;
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.stat .stat-content .card img{
+    height: 120px;
+}
+.stat .stat-content .card .box .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0 8px 0;
+}
+.stat .stat-content .card .box{
+   transition: all 0.3s ease;
+}
+.stat .stat-content .card:hover .box{
+transform: scale(1.07);
+}
+/* .stat .stat-content .card:hover{
+    background: rgb(71, 70, 70)
+   
+} */
 
 /* project scetion  */
 
@@ -411,6 +443,10 @@ transform: scale(1.07);
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .stat .stat-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     
     #section-2 {
         margin-top: -10%;
@@ -433,6 +469,10 @@ transform: scale(1.07);
         margin-bottom: 20px;
     }
     .project .project-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .stat .stat-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -462,6 +502,10 @@ transform: scale(1.07);
         margin-bottom: 20px;
     }
     .project .project-content .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .stat .stat-content .card{
         width: 100%;
         margin-bottom: 20px;
     }
