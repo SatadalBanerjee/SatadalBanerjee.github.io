@@ -31,3 +31,15 @@ var typed =new Typed (".re-typing-2",{
     backSpeed:50,
     loop:true,
 });
+
+GitHubCalendar(".calendar", "SatadalBanerjee");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "SatadalBanerjee", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "SatadalBanerjee", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${SatadalBanerjee}`)
+       }
+    }).then(r => r.text())
