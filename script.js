@@ -43,3 +43,9 @@ GitHubCalendar(".calendar", "SatadalBanerjee");
          return fetch(`https://your-proxy.com/github?user=${SatadalBanerjee}`)
        }
     }).then(r => r.text())
+
+
+    function contshow4(){  
+         window.open(href="./resource/Satadal_Banerjee_Resume.pdf");  
+           }
+  let my_cont_4=document.querySelector(".sata").addEventListener("click",contshow4);
